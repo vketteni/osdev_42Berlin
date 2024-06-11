@@ -1,0 +1,8 @@
+[package]
+name = "my-uefi-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.21"
+uefi = { version = "0.28.0", features = [ "panic_handler", "logger" ] }
