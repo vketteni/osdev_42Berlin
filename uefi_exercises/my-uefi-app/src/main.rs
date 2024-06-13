@@ -47,6 +47,5 @@ fn print_image_path(boot_services: &BootServices) -> Result {
         .expect("convert_device_path_to_text failed");
 
     info!("Image path: {}", &*image_device_path_text);
-    boot_services.stall(10_000_000);
     Ok(())
 }
